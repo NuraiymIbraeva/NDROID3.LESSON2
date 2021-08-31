@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/my_nav"
+    app:startDestination="@id/filmListFragment">
+
+    <fragment
+        android:id="@+id/detailFragment"
+        android:name="com.nurayim.ndroid3lesson2.ui.DetailFragment"
+        android:label="fragment_detail"
+        tools:layout="@layout/fragment_detail" >
+        <action
+            android:id="@+id/action_detailFragment_to_filmListFragment"
+            app:destination="@id/filmListFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/filmListFragment"
+        android:name="com.nurayim.ndroid3lesson2.ui.FilmListFragment"
+        android:label="fragment_film_list"
+        tools:layout="@layout/fragment_film_list" />
+</navigation>
